@@ -1,0 +1,23 @@
+diff --git a/Makefile b/Makefile
+index df054e3..c281326 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,4 @@
+-all:	make-simavr make-tests make-examples
++all:	make-simavr
+ 
+ make-simavr:
+ 	make -C simavr
+diff --git a/Makefile.common b/Makefile.common
+index 32edccc..91b0599 100644
+--- a/Makefile.common
++++ b/Makefile.common
+@@ -46,7 +46,7 @@ IPATH		+= /opt/local/include
+ LFLAGS		= -L/opt/local/lib/
+ endif
+ else
+-AVR_ROOT 	:= /usr/lib/avr
++AVR_ROOT 	:= /usr/avr
+ AVR_INC 	:= ${AVR_ROOT}
+ AVR 		:= avr-
+ CFLAGS 		+= -fPIC
